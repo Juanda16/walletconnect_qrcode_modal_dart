@@ -137,7 +137,7 @@ class WalletConnectQrCodeModal {
         return session;
       } catch (e) {
         isError = true;
-        Navigator.of(context).pop();
+        // Navigator.of(context).pop();
         rethrow;
       }
     }
@@ -147,7 +147,7 @@ class WalletConnectQrCodeModal {
     cancelableCompleter.operation.value.then((session) {
       sessionCreated = true;
       if (!isDismissed) {
-        Navigator.of(context).pop();
+        // Navigator.of(context).pop();
       }
       if (!completer.isCompleted) {
         completer.complete(session);
